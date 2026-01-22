@@ -283,27 +283,126 @@
             <h2>九、我们如何使用第三方SDK</h2>
             <p>为确保平台核心功能正常运行并提升用户体验，我们可能会接入第三方软件开发工具包（SDK）。第三方 SDK 的收集和使用行为适用其自身隐私政策，我们会在合理必要范围内将您的信息提供给该 SDK，以实现相应功能。</p>
             <p>我们集成的极光安全认证 SDK 虽可能读取设备广告标识符（IDFA），但仅用于设备唯一性识别与安全风控，不用于跨 App 或跨网站的用户追踪、个性化广告投放或用户画像分析。我们不会将 IDFA 用于 Apple 定义的‘追踪（Tracking）’目的。在 HarmonyOS NEXT 操作系统环境下，部分第三方 SDK 可能基于 HarmonyOS 系统能力运行，并依法合规获取 HarmonyOS 提供的设备标识符（如 OAID、AAID、ODID 等），具体收集信息类型、使用目的及处理方式以本政策及对应 SDK 隐私政策为准。</p>
-            <div class="card">
-                <p>SDK 名称：极光安全认证 SDK<br/>
-                第三方主体：深圳市和讯华谷信息技术有限公司<br/>
-                合作目的：本 App 仅启用极光 SDK 的‘一键认证’基础功能，不启用安全风控扩展功能，因此不会收集软件列表、精确位置、IMEI、MAC 等可选信息。"</p>
-                <p><strong>处理个人信息类型及用途：设备信息、网络信息：必要个人信息：设备标识符（包括 IDFA、Android ID、GAID、OAID、UAID、Boot ID）、设备硬件信息（包括设备型号、设备屏幕分辨率、设备硬件制造商、设备产品名称、设备存储空间）、操作系统信息（包括操作系统版本、系统名称、系统语言）、网络信息（包括网络类型、运营商名称、IP 地址、DHCP、WIFI 状态信息）、手机号；可选个人信息：设备标识符（IMEI、MAC、IMSI、ICCID）、基站信息、SIM 卡状态</strong>：用于有效识别设备、快速响应验证需求以提供高效、稳定、流畅的一键认证服务并生成唯一的极光设备标识符。网络信息（包括网络类型、运营商名称、基站信息、IP 地址、WiFi 状态信息、WiFi 列表信息、SSID、BSSID）、位置相关信息、软件列表信息（包括软件列表及软件运行列表信息）：安全风控扩展功能的必要信息，用于分析当前设备的风险等级和应用环境，可有效识别作弊行为，剔除作弊设备，识别恶意刷量、恶意程序、保护用户账号安全等。软件列表信息（包括软件列表及软件运行列表信息）：应用自启动扩展业务功能的必要信息，用于让用户的号码验证能够更及时、有效地完成，提高应用的安全性与保护用户账号安全。</p>
-                <p>数据处理方式：通过去标识化、加密传输及其他安全方式<br/>
-                官网链接：https://www.jiguang.cn<br/>
-                隐私政策链接：https://www.jiguang.cn/license/privacy</p>
-            </div>
-            <div class="card">
-                <p>SDK 名称：高德地图 SDK<br/>
-                第三方主体：高德软件有限公司（隶属于阿里巴巴集团）<br/>
-                合作目的：为 App 用户提供地图定位、路径规划、导航、地理位置解析及相关服务</p>
-                <p>设备信息：设备标识符（如 Android ID、OAID、IDFA）、操作系统版本、设备型号，用于 SDK 初始化和功能运行。</p>
-                <p><strong>位置信息：GPS 信息、基站信息、WiFi 信息（SSID、BSSID）、IP 地址</strong>，用于定位、导航和周边信息服务。</p>
-                <p><strong>可选个人信息：精确地理位置（经纬度）</strong>，在用户授权后用于提供导航、路径规划、位置标记、配送路径优化等服务。</p>
-                <p>网络信息：网络类型、运营商信息，用于提升定位准确性与服务稳定性。</p>
-                <p>数据处理方式：通过去标识化、加密传输及其他安全方式，确保数据安全。<br/>
-                官网链接：https://lbs.amap.com<br/>
-                隐私政策链接：https://lbs.amap.com/pages/privacy</p>
-            </div>
+            <!-- Android 端 SDK -->
+<div class="card">
+    <p>SDK 名称：号码认证 SDK - Android<br/>
+    第三方主体：中移互联网有限公司<br/>
+    合作目的：用于为 App 用户提供本机号码一键登录与身份认证服务，提高登录效率与账号安全性。</p>
+
+    <p><strong>处理个人信息类型及用途：</strong>
+    设备信息（包括设备型号、操作系统版本、设备标识符如 Android ID、OAID、Boot ID）、网络信息（包括网络类型、运营商名称、IP 地址）、手机号相关标识信息：用于完成号码认证请求、校验当前设备与手机号的关联关系，保障认证服务的安全性与稳定性。</p>
+
+    <p>数据处理方式：通过去标识化、加密传输及其他安全方式<br/>
+    官网链接：https://www.cmpassport.com<br/>
+    隐私政策链接：https://wap.cmpassport.com/resources/html/contract2.html</p>
+</div>
+
+<div class="card">
+    <p>SDK 名称：微信OpenSDK Android<br/>
+    第三方主体：深圳市腾讯计算机系统有限公司<br/>
+    合作目的：用于实现 App 内的微信登录、内容分享及相关社交功能。</p>
+
+    <p><strong>处理个人信息类型及用途：</strong>
+    设备信息（包括设备型号、操作系统版本、设备标识符）、网络信息（包括网络类型、IP 地址）、用户授权的微信账号信息（如微信昵称、头像、OpenID）：用于完成用户身份验证、账号绑定、内容分享及功能调用。</p>
+
+    <p>数据处理方式：通过去标识化、加密传输及其他安全方式<br/>
+    官网链接：https://open.weixin.qq.com<br/>
+    隐私政策链接：https://support.weixin.qq.com/cgi-bin/mmsupportacctnodeweb-bin/pages/RYiYJkLOrQwu0nb8</p>
+</div>
+
+<div class="card">
+    <p>SDK 名称：极光安全认证 - JVerification SDK - Android<br/>
+    第三方主体：深圳市和讯华谷信息技术有限公司<br/>
+    合作目的：为 App 提供一键登录与安全认证服务，用于识别当前设备与手机号的关联关系，保障账号登录安全。</p>
+
+    <p><strong>处理个人信息类型及用途：</strong>
+    设备信息（包括设备标识符如 Android ID、OAID、设备型号、操作系统版本）、网络信息（包括网络类型、运营商名称、IP 地址）、手机号相关标识信息：用于完成身份校验、生成唯一设备标识并保障认证请求的安全性与稳定性。</p>
+
+    <p>数据处理方式：通过去标识化、加密传输及其他安全方式<br/>
+    官网链接：https://www.jiguang.cn<br/>
+    隐私政策链接：https://www.jiguang.cn/license/privacy</p>
+</div>
+
+<div class="card">
+    <p>SDK 名称：极光推送 - JPush SDK - Android<br/>
+    第三方主体：深圳市和讯华谷信息技术有限公司<br/>
+    合作目的：用于向用户推送系统通知、服务消息及与 App 功能相关的重要提醒信息。</p>
+
+    <p><strong>处理个人信息类型及用途：</strong>
+    设备信息（包括设备标识符如 Android ID、OAID、设备型号、操作系统版本）、网络信息（包括网络类型、IP 地址、推送标识信息）：用于建立推送通道、发送通知消息并保障推送服务的准确性与稳定性。</p>
+
+    <p>数据处理方式：通过去标识化、加密传输及其他安全方式<br/>
+    官网链接：https://www.jiguang.cn<br/>
+    隐私政策链接：https://www.jiguang.cn/license/privacy</p>
+</div>
+
+<div class="card">
+    <p>SDK 名称：移动智能终端补充设备标识体系统一调用SDK - Android<br/>
+    第三方主体：中国信息通信研究院<br/>
+    合作目的：用于获取设备标识信息（如 OAID），以支持设备识别、统计分析及安全风控能力。</p>
+
+    <p><strong>处理个人信息类型及用途：</strong>
+    设备标识信息（OAID）、设备信息（包括设备型号、操作系统版本）：用于生成匿名化设备标识，辅助完成设备识别、反作弊分析与安全风控。</p>
+
+    <p>数据处理方式：通过去标识化、加密传输及其他安全方式<br/>
+    官网链接：https://www.msa-alliance.cn<br/>
+    隐私政策链接：https://www.msa-alliance.cn/col.jsp?id=122</p>
+</div>
+
+<div class="card">
+    <p>SDK 名称：联通认证SDK - Android<br/>
+    第三方主体：联通在线信息科技有限公司<br/>
+    合作目的：用于为 App 用户提供手机号一键登录及身份认证服务。</p>
+
+    <p><strong>处理个人信息类型及用途：</strong>
+    设备信息（包括设备型号、操作系统版本、设备标识符）、网络信息（包括网络类型、运营商名称、IP 地址）、手机号相关标识信息：用于完成手机号认证请求、校验设备与手机号的绑定关系，保障登录服务的安全性与稳定性。</p>
+
+    <p>数据处理方式：通过去标识化、加密传输及其他安全方式<br/>
+    官网链接：https://www.wosms.cn<br/>
+    隐私政策链接：https://msv6.wosms.cn/html/oauth/protocol2.html</p>
+</div>
+
+<!-- iOS 端 SDK -->
+
+<div class="card">
+    <p>SDK 名称：号码认证 SDK - iOS<br/>
+    第三方主体：中移互联网有限公司<br/>
+    合作目的：用于为 App 用户提供本机号码一键登录与身份认证服务，提高登录效率与账号安全性。</p>
+
+    <p><strong>处理个人信息类型及用途：</strong>
+    设备信息（包括设备型号、操作系统版本、设备标识符如 IDFA）、网络信息（包括网络类型、运营商名称、IP 地址）、手机号相关标识信息：用于完成号码认证请求与身份校验，保障认证服务的安全性与稳定性。</p>
+
+    <p>数据处理方式：通过去标识化、加密传输及其他安全方式<br/>
+    官网链接：https://www.cmpassport.com<br/>
+    隐私政策链接：https://wap.cmpassport.com/resources/html/contract2.html</p>
+</div>
+
+<div class="card">
+    <p>SDK 名称：微信OpenSDK iOS<br/>
+    第三方主体：深圳市腾讯计算机系统有限公司<br/>
+    合作目的：用于实现 App 内的微信登录、内容分享及相关社交功能。</p>
+
+    <p><strong>处理个人信息类型及用途：</strong>
+    设备信息（包括设备型号、操作系统版本、设备标识符如 IDFA）、网络信息（包括网络类型、IP 地址）、用户授权的微信账号信息（如微信昵称、头像、OpenID）：用于完成用户身份验证、账号绑定与内容分享服务。</p>
+
+    <p>数据处理方式：通过去标识化、加密传输及其他安全方式<br/>
+    官网链接：https://open.weixin.qq.com<br/>
+    隐私政策链接：https://support.weixin.qq.com/cgi-bin/mmsupportacctnodeweb-bin/pages/RYiYJkLOrQwu0nb8</p>
+</div>
+
+<div class="card">
+    <p>SDK 名称：极光推送 - JPush SDK - iOS<br/>
+    第三方主体：深圳市和讯华谷信息技术有限公司<br/>
+    合作目的：用于向用户推送系统通知、服务消息及与 App 功能相关的重要提醒信息。</p>
+
+    <p><strong>处理个人信息类型及用途：</strong>
+    设备信息（包括设备型号、操作系统版本、设备标识符如 IDFA）、网络信息（包括网络类型、IP 地址、推送标识信息）：用于建立推送通道并发送通知消息，保障推送服务的稳定性与准确性。</p>
+
+    <p>数据处理方式：通过去标识化、加密传输及其他安全方式<br/>
+    官网链接：https://www.jiguang.cn<br/>
+    隐私政策链接：https://www.jiguang.cn/license/privacy</p>
+</div>
+
         </section>
 
         <section class="section">
